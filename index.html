@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Anniversary ❤️</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===============================
+     CANVAS LOVE BACKGROUND
+================================ -->
+<canvas id="loveCanvas"></canvas>
+
+<!-- ===============================
+     PASSWORD SCREEN
+================================ -->
+<div id="passwordScreen" class="password-screen">
+    <div class="password-box">
+        <h2>🔐 Password Rahasia</h2>
+        <p>Hanya untuk orang spesial 💖</p>
+
+        <input
+            type="password"
+            id="passwordInput"
+            class="password-input"
+            placeholder="Masukkan password..."
+        >
+
+        <button id="passwordButton">Masuk</button>
+
+        <p id="passwordError" class="password-error"></p>
+    </div>
+</div>
+
+<!-- ===============================
+     COVER PAGE
+================================ -->
+<section id="cover" class="cover">
+    <div class="cover-content">
+        <h1>Happy Anniversary 💕</h1>
+        <p>3 Tahun penuh cerita & cinta</p>
+
+        <button id="openButton" class="open-button">
+            Buka Kenangan 💌
+        </button>
+    </div>
+</section>
+
+<!-- ===============================
+     MAIN CONTENT
+================================ -->
+<main id="main" class="hidden">
+
+    <!-- UCAPAN -->
+    <section class="ucapan-section">
+        <h2>💖 Untuk Kamu</h2>
+        <p>
+            Terima kasih sudah hadir dan bertahan sejauh ini.
+            Tiga tahun mungkin terdengar singkat,
+            tapi di dalamnya ada begitu banyak cerita,
+            tawa yang kita bagi,
+            air mata yang kita peluk bersama,
+            dan doa-doa yang diam-diam kita panjatkan.
+
+            Terima kasih sudah memilihku,
+            bahkan di hari-hari ketika segalanya tidak mudah.
+            Bersamamu aku belajar tentang sabar,
+            tentang mengerti,
+            dan tentang arti pulang yang sesungguhnya.
+
+            Semoga langkah kita selalu searah,
+            genggaman ini tidak pernah lelah,
+            dan cinta ini tetap sederhana,
+            tapi selalu penuh makna ❤️
+        </p>
+    </section>
+
+    <!-- GALERI -->
+    <section class="galeri-section">
+        <h2>📸 Kenangan Kita — 2025</h2>
+        <p class="galeri-subtitle">
+            Setiap bulan menyimpan cerita,<br>
+            dan semuanya tentang kita 🤍
+        </p>
+
+        <div class="galeri-grid">
+            <div class="galeri-item"><img src="Januari.jpeg"><span>Januari</span></div>
+            <div class="galeri-item"><img src="Februari.jpeg"><span>Februari</span></div>
+            <div class="galeri-item"><img src="Maret.jpeg"><span>Maret</span></div>
+            <div class="galeri-item"><img src="April.jpeg"><span>April</span></div>
+            <div class="galeri-item"><img src="Mei.jpeg"><span>Mei</span></div>
+            <div class="galeri-item"><img src="Juni.jpeg"><span>Juni</span></div>
+            <div class="galeri-item"><img src="Juli.jpeg"><span>Juli</span></div>
+            <div class="galeri-item"><img src="Agustus.jpeg"><span>Agustus</span></div>
+            <div class="galeri-item"><img src="September.jpeg"><span>September</span></div>
+            <div class="galeri-item"><img src="Oktober.jpeg"><span>Oktober</span></div>
+            <div class="galeri-item"><img src="November.jpeg"><span>November</span></div>
+            <div class="galeri-item"><img src="Desember.jpeg"><span>Desember</span></div>
+        </div>
+    </section>
+
+    <!-- MUSIK -->
+    <section class="musik-section">
+        <h2>🎵 Lagu Kita</h2>
+
+        <audio id="audioPlayer" src="kasih.putih.mp3"></audio>
+
+        <button id="playPauseButton" class="music-btn">
+            <span class="icon">▶️</span>
+            <span class="text">Play</span>
+        </button>
+    </section>
+
+    <!-- PENUTUP -->
+    <section class="closing-section">
+        <p class="closing-text">
+            Tidak tahu bagaimana masa depan menuliskan ceritanya,<br>
+            tapi aku tahu satu hal,<br>
+            selama masih ada kamu di sampingku,<br>
+            semuanya terasa cukup 🤍
+        </p>
+
+        <p class="closing-sign">
+            — Dari aku, yang selalu memilih kamu
+        </p>
+    </section>
+
+</main>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox hidden">
+    <span class="lightbox-close">✕</span>
+    <img id="lightbox-img">
+</div>
+
+</body>
+</html>
